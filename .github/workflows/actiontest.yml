@@ -26,9 +26,8 @@ jobs:
           NAME: ggnagpae1
           REPO: actiontest
         run:
-          docker build -tag $REPO:latest .
-          docker tag $REPO:latest $NAME/$REPO:latest
-          docker push $NAME/$REPO.latest
+          docker build -t $REPO .
+          
 
 
 
