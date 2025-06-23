@@ -27,5 +27,9 @@ jobs:
           REPO: actiontest
         run:
           docker build -t $REPO .
+      - name: tag
+        env:
+          NAME: ggnagpae1
+          REPO: actiontest
         run:
           docker tag $REPO:latest $NAME/$REPO:latest
