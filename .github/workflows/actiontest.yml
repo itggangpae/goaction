@@ -33,6 +33,6 @@ jobs:
           REPO: actiontest
         run:
           docker tag $REPO:latest $NAME/$REPO:latest
-      -name: push
+      - name: push
         run:
           docker push $NAME/$REPO:latest
